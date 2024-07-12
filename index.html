@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Hub</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar .nav-links li {
+            margin: 0 1rem;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Background Video Section */
+        .video-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-section iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .video-overlay h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .video-overlay p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        /* Image Cards Section */
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            flex-wrap: wrap;
+            background: #fff;
+        }
+
+        .card {
+            flex: 1;
+            margin: 1rem;
+            padding: 1rem;
+            background: #f4f4f4;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card h2 {
+            margin: 1rem 0;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                flex-direction: column;
+                display: none;
+            }
+
+            .navbar .nav-links.active {
+                display: flex;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Sports Hub</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cricket</a></li>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li><a href="#">Athletics</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background Video Section -->
+    <div class="video-section">
+        <iframe src="https://www.youtube.com/embed/L3374C3OyrY?autoplay=1&mute=1&loop=1&playlist=L3374C3OyrY&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="video-overlay">
+            <h1>Welcome to Sports Hub</h1>
+            <p>Your one-stop destination for Cricket, Football, Tennis, and Athletics</p>
+        </div>
+    </div>
+
+    <!-- Image Cards Section -->
+    <section class="cards">
+        <div class="card">
+            <img src="images/cricket.jpeg" alt="Music">
+            <h2>Cricket</h2>
+            <p>Latest music news and updates.</p>
+        </div>
+        <div class="card">
+            <img src="images/football.jpeg" alt="Movies">
+            <h2>Football</h2>
+            <p>All about the latest movies and reviews.</p>
+        </div>
+        <div class="card">
+            <img src="images/athlatics.jpeg" alt="Sports">
+            <h2>Athlatics</h2>
+            <p>Live sports updates and scores.</p>
+        </div>
+        <div class="card">
+            <img src="images/race.jpeg" alt="Celebrities">
+            <h2>Racing</h2>
+            <p>Gossip and news about your favorite celebrities.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sports Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
