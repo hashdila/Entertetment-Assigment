@@ -109,11 +109,14 @@
             background: #f4f4f4;
             text-align: center;
             border-radius: 10px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .card img {
             width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
 
@@ -123,6 +126,11 @@
 
         .card p {
             color: #555;
+        }
+
+        .cards a {
+            text-decoration: none;
+            color: inherit;
         }
 
         /* Footer */
@@ -159,7 +167,7 @@
     <nav class="navbar">
         <div class="logo">Sports Hub</div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Cricket</a></li>
             <li><a href="#">Football</a></li>
             <li><a href="#">Tennis</a></li>
@@ -178,26 +186,34 @@
 
     <!-- Image Cards Section -->
     <section class="cards">
-        <div class="card">
-            <img src="images/cricket.jpeg" alt="Music">
-            <h2>Cricket</h2>
-            <p>Latest music news and updates.</p>
-        </div>
-        <div class="card">
-            <img src="images/football.jpeg" alt="Movies">
-            <h2>Football</h2>
-            <p>All about the latest movies and reviews.</p>
-        </div>
-        <div class="card">
-            <img src="images/athlatics.jpeg" alt="Sports">
-            <h2>Athlatics</h2>
-            <p>Live sports updates and scores.</p>
-        </div>
-        <div class="card">
-            <img src="images/race.jpeg" alt="Celebrities">
-            <h2>Racing</h2>
-            <p>Gossip and news about your favorite celebrities.</p>
-        </div>
+        <a href="cricket.html">
+            <div class="card">
+                <img src="images/cricket.jpeg" alt="Cricket">
+                <h2>Cricket</h2>
+                <p>Latest cricket news and updates.</p>
+            </div>
+        </a>
+        <a href="football.html">
+            <div class="card">
+                <img src="images/football.jpeg" alt="Football">
+                <h2>Football</h2>
+                <p>All about the latest football news and reviews.</p>
+            </div>
+        </a>
+        <a href="athletics.html">
+            <div class="card">
+                <img src="images/athlatics.jpeg" alt="Athletics">
+                <h2>Athletics</h2>
+                <p>Live sports updates and scores.</p>
+            </div>
+        </a>
+        <a href="racing.html">
+            <div class="card">
+                <img src="images/race.jpeg" alt="Racing">
+                <h2>Racing</h2>
+                <p>Gossip and news about your favorite racers.</p>
+            </div>
+        </a>
     </section>
 
     <!-- Footer -->
