@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athletics</title>
     <style>
         /* General Styles */
-        body, html {
+        body,
+        html {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -113,12 +115,15 @@
             padding: 1rem;
             background: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .news-article img {
             width: 100%;
-            height: auto;
+            height: 200px;
+            /* Set a fixed height */
+            object-fit: cover;
+            /* Maintain aspect ratio and cover the area */
             border-radius: 10px 10px 0 0;
         }
 
@@ -129,6 +134,60 @@
         .news-article p {
             color: #555;
         }
+
+        .olympics-content {
+            width: 90%;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .olympics h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .first {
+            display: flex;
+            text-align: justify;
+            
+
+        }
+
+        .second {
+            display: flex;
+            text-align: justify;
+            
+        }
+
+        .olymic-image1{
+            width: 30%;
+            /* margin: 10px; */
+            background-color: #444;
+        }
+
+        .olymic-content1{
+            /* margin: 10px; */
+            padding: 20px;
+            width: 70%;
+            text-align: center;
+            /* background-color: aqua; */
+        }
+
+        .olymic-image2{
+            width: 30%;
+            /* height: auto; */
+            /* margin: 10px; */
+            /* border-radius: 10px; */
+        }
+
+        .olymic-content2{
+            /* margin: 10px; */
+            padding: 20px;
+            width: 70%;
+            text-align: center;
+            /* background-color: aqua; */
+        }
+
 
         /* Featured Athletes Section */
         .athletes {
@@ -153,7 +212,7 @@
             background: #fff;
             text-align: center;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .athlete-card img {
@@ -191,7 +250,7 @@
             margin: 1rem 0;
             background: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .event-list h3 {
@@ -217,16 +276,19 @@
                 display: flex;
             }
 
-            .news-articles, .athlete-cards {
+            .news-articles,
+            .athlete-cards {
                 flex-direction: column;
             }
 
-            .news-article, .athlete-card {
+            .news-article,
+            .athlete-card {
                 margin: 1rem 0;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -242,6 +304,7 @@
             <li><a href="#">Football</a></li>
             <li><a href="#">Tennis</a></li>
             <li><a href="#">Athletics</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -253,7 +316,9 @@
     <!-- Introduction Section -->
     <section class="intro">
         <h2>About Athletics</h2>
-        <p>Athletics is a collection of sporting events that involve competitive running, jumping, throwing, and walking. The most common types of athletics competitions are track and field, road running, cross country running, and race walking.</p>
+        <p>Athletics is a collection of sporting events that involve competitive running, jumping, throwing, and
+            walking. The most common types of athletics competitions are track and field, road running, cross country
+            running, and race walking.</p>
     </section>
 
     <!-- News Section -->
@@ -261,21 +326,81 @@
         <h2>Latest News</h2>
         <div class="news-articles">
             <div class="news-article">
-                <img src="news1.jpg" alt="News 1">
+                <img src="images/run.jpeg" alt="News 1">
                 <h3>Breaking: New World Record</h3>
-                <p>In an astonishing display of speed and endurance, a new world record has been set in the men's 100m sprint.</p>
+                <p>In an astonishing display of speed and endurance, a new world record has been set in the men's 100m
+                    sprint.</p>
             </div>
             <div class="news-article">
-                <img src="news2.jpg" alt="News 2">
+                <img src="images/medle.avif" alt="News 2">
                 <h3>Upcoming Championships</h3>
-                <p>The athletics world is gearing up for the upcoming championships, with athletes from all over the world set to compete.</p>
+                <p>The athletics world is gearing up for the upcoming championships, with athletes from all over the
+                    world set to compete.</p>
             </div>
             <div class="news-article">
-                <img src="news3.jpg" alt="News 3">
+                <img src="images/pros.png" alt="News 3">
                 <h3>Training Tips from the Pros</h3>
-                <p>Top athletes share their training secrets and tips to help you improve your performance in various athletic events.</p>
+                <p>Top athletes share their training secrets and tips to help you improve your performance in various
+                    athletic events.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Olimpic Section part -->
+
+    <section class="olympics">
+        <h2>The Olympics</h2>
+        <div class="">
+        <div class="olympics-content ">
+            <div class="first">
+                <div class="olymic-image1" >
+                    <img src="images/olympic.jpeg" alt="Olympic Games" class="olympics-image" style="width: 100%;">
+                </div>
+                <div class="olymic-content1" >
+
+                    <p>The Olympics is a leading international sporting event featuring summer and winter sports
+                        competitions in
+                        which thousands of athletes from around the world participate in a variety of competitions. The
+                        Olympic
+                        Games are considered the world's foremost sports competition with more than 200 nations
+                        participating.The modern Olympic Games were first held in 1896 in Athens, Greece, and have since grown to
+                        include
+                        more
+                        than 300 events in various sports disciplines. The Olympics are held every four years, with the
+                        Summer
+                        and Winter Games alternating every two years. The Games are a symbol of global unity and
+                        sportsmanship,
+                        bringing together athletes from diverse backgrounds to compete on the world stage. One of the most iconic aspects of the Olympics is the opening ceremony, which features a parade
+                        of
+                        nations, the lighting of the Olympic flame, and a cultural showcase of the host country. The
+                        Olympic
+                        motto, "Citius, Altius, Fortius" (Faster, Higher, Stronger), embodies the spirit of the Games
+                        and
+                        the
+                        pursuit of excellence by athletes.</p>
+                </div>
+            </div>
+            <div class="second">
+
+                <div class="olymic-content2" >
+                    <p>The Olympics also have a significant impact on the host cities, often leading to the development
+                        of
+                        new
+                        infrastructure and the promotion of tourism. Hosting the Olympics is a prestigious honor and
+                        provides an
+                        opportunity for the host nation to showcase its culture and achievements to the world.Over the years, the Olympics have produced many memorable moments and legendary athletes, such as
+                        Usain
+                        Bolt, Michael Phelps, and Simone Biles. These athletes have inspired millions with their
+                        performances
+                        and have left a lasting legacy in the world of sports.</p>
+                </div>
+                <div class="olymic-image2" >
+                    <img src="images/olympicparice.webp" alt="Olympic Flame" class="olympics-image" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        </div>
+
     </section>
 
     <!-- Featured Athletes Section -->
@@ -283,22 +408,44 @@
         <h2>Featured Athletes</h2>
         <div class="athlete-cards">
             <div class="athlete-card">
-                <img src="athlete1.jpg" alt="Athlete 1">
+                <img src="images/usain.avif" alt="Athlete 1">
                 <h3>Usain Bolt</h3>
-                <p>Known as the fastest man alive, Usain Bolt has won numerous gold medals and set multiple world records.</p>
+                <p>Known as the fastest man alive, Usain Bolt has won numerous gold medals and set multiple world
+                    records.</p>
             </div>
             <div class="athlete-card">
-                <img src="athlete2.jpg" alt="Athlete 2">
+                <img src="images/felix.webp" alt="Athlete 2">
                 <h3>Allyson Felix</h3>
-                <p>With an impressive career in track and field, Allyson Felix is a multiple-time Olympic and World Champion.</p>
+                <p>With an impressive career in track and field, Allyson Felix is a multiple-time Olympic and World
+                    Champion.</p>
             </div>
             <div class="athlete-card">
-                <img src="athlete3.jpg" alt="Athlete 3">
+                <img src="images/farah.jpeg" alt="Athlete 3">
                 <h3>Mo Farah</h3>
-                <p>Mo Farah is a long-distance runner who has won gold medals in both the 5,000 and 10,000 meters at the Olympics.</p>
+                <p>Mo Farah is a long-distance runner who has won gold medals in both the 5,000 and 10,000 meters at the
+                    Olympics.</p>
+            </div>
+            <div class="athlete-card">
+                <img src="images/shelly.webp" alt="Athlete 4">
+                <h3>Shelly-Ann Fraser-Pryce</h3>
+                <p>Shelly-Ann Fraser-Pryce is a Jamaican track and field sprinter who has won multiple Olympic gold
+                    medals.</p>
+            </div>
+            <div class="athlete-card">
+                <img src="images/chopra.webp" alt="Athlete 5">
+                <h3>Neeraj Chopra</h3>
+                <p>Neeraj Chopra is an Indian javelin thrower who has won gold medals at the Olympics and Asian Games.
+                </p>
+            </div>
+            <div class="athlete-card">
+                <img src="images/hill.jpeg" alt="Athlete 6">
+                <h3>Jessica Ennis-Hill</h3>
+                <p>Jessica Ennis-Hill is a retired British track and field athlete who was the 2012 Olympic heptathlon
+                    champion.</p>
             </div>
         </div>
     </section>
+
 
     <!-- Upcoming Events Section -->
     <section class="events">
@@ -337,4 +484,5 @@
         });
     </script>
 </body>
+
 </html>
