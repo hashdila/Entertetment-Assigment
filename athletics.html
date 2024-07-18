@@ -59,66 +59,83 @@
             text-decoration: underline;
         }
 
-        /* Hero Section */
-        .hero {
+        
+        
+
+    
+         
+
+        .intro iframe {
+            position: absolute;
+            /* top: 50%;
+            left: 50%; */
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            pointer-events: none; /* Prevents interaction with the video */
+        }
+
+        .introdu {
             position: relative;
-            height: 50vh;
-            background: url('athletics-hero.jpg') no-repeat center center/cover;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+        }
+
+        .intro {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .intro iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             color: #fff;
             text-align: center;
         }
 
-        .top-video {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .top-video iframe {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100vw;
-            height: 100vh;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        .top-video .content {
-            position: relative;
-            z-index: 1;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            /* Optional: To make the text more readable */
-        }
-
-        .hero h1 {
+        .introdu h1 {
             font-size: 3rem;
-            margin: 0;
-        }
-
-        /* Introduction Section */
-        .intro {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .intro h2 {
             margin-bottom: 1rem;
         }
 
-        .intro p {
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
+        /* .introdu p {
+            font-size: 1.5rem;
+            margin: 0;
+        } */
+
+
+
+
+
+
+        
 
         /* News Section */
         .news {
@@ -318,10 +335,7 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Athletics</h1>
-    </header>
+    
 
     <!-- Navigation Bar -->
     <nav class="navbar">
@@ -330,7 +344,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Cricket</a></li>
             <li><a href="#">Football</a></li>
-            <li><a href="#">Tennis</a></li>
+            <li><a href="racing.html">Racing</a></li>
             <li><a href="athletics.html">Athletics</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -338,26 +352,22 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>The World of Athletics</h1>
+        
     </section>
 
     <!-- Introduction Section -->
     <section class="intro">
-        <div class="top-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gF0rrpMH-Jo?si=6PWsneews_85R9lZ&autoplay=1&controls=0&loop=1&playlist=gF0rrpMH-Jo"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UEhMDfLQJXk?si=etxHOeC24utIz2Oh&autoplay=1&mute=1&loop=1" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe> -->
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UEhMDfLQJXk?autoplay=1&mute=1&loop=1&playlist=UEhMDfLQJXk&controls=0" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
 
-            <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_VIDEO_ID"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-            <div class="content">
-                <h2>About Athletics</h2>
-                <p>Athletics is a collection of sporting events that involve competitive running, jumping, throwing, and
-                    walking. The most common types of athletics competitions are track and field, road running, cross
-                    country
-                    running, and race walking.</p>
-            </div>
+ 
+        <div class="introdu">
+            <h1>The World of Athletics</h1>
+            <p>Athletics is a collection of sporting events that involve competitive running, jumping, throwing, and
+                walking. The most common types of athletics competitions are track and field, road running, cross
+                country
+                running, and race walking.</p>
+        </div>
         </div>
     </section>
 
