@@ -71,6 +71,34 @@
             text-align: center;
         }
 
+        .top-video {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .top-video iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .top-video .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            /* Optional: To make the text more readable */
+        }
+
         .hero h1 {
             font-size: 3rem;
             margin: 0;
@@ -149,23 +177,23 @@
         .first {
             display: flex;
             text-align: justify;
-            
+
 
         }
 
         .second {
             display: flex;
             text-align: justify;
-            
+
         }
 
-        .olymic-image1{
+        .olymic-image1 {
             width: 30%;
             /* margin: 10px; */
             background-color: #444;
         }
 
-        .olymic-content1{
+        .olymic-content1 {
             /* margin: 10px; */
             padding: 20px;
             width: 70%;
@@ -173,14 +201,14 @@
             /* background-color: aqua; */
         }
 
-        .olymic-image2{
+        .olymic-image2 {
             width: 30%;
             /* height: auto; */
             /* margin: 10px; */
             /* border-radius: 10px; */
         }
 
-        .olymic-content2{
+        .olymic-content2 {
             /* margin: 10px; */
             padding: 20px;
             width: 70%;
@@ -303,7 +331,7 @@
             <li><a href="#">Cricket</a></li>
             <li><a href="#">Football</a></li>
             <li><a href="#">Tennis</a></li>
-            <li><a href="#">Athletics</a></li>
+            <li><a href="athletics.html">Athletics</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -315,10 +343,22 @@
 
     <!-- Introduction Section -->
     <section class="intro">
-        <h2>About Athletics</h2>
-        <p>Athletics is a collection of sporting events that involve competitive running, jumping, throwing, and
-            walking. The most common types of athletics competitions are track and field, road running, cross country
-            running, and race walking.</p>
+        <div class="top-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gF0rrpMH-Jo?si=6PWsneews_85R9lZ&autoplay=1&controls=0&loop=1&playlist=gF0rrpMH-Jo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_VIDEO_ID"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+            <div class="content">
+                <h2>About Athletics</h2>
+                <p>Athletics is a collection of sporting events that involve competitive running, jumping, throwing, and
+                    walking. The most common types of athletics competitions are track and field, road running, cross
+                    country
+                    running, and race walking.</p>
+            </div>
+        </div>
     </section>
 
     <!-- News Section -->
@@ -351,54 +391,62 @@
     <section class="olympics">
         <h2>The Olympics</h2>
         <div class="">
-        <div class="olympics-content ">
-            <div class="first">
-                <div class="olymic-image1" >
-                    <img src="images/olympic.jpeg" alt="Olympic Games" class="olympics-image" style="width: 100%;">
-                </div>
-                <div class="olymic-content1" >
+            <div class="olympics-content ">
+                <div class="first">
+                    <div class="olymic-image1">
+                        <img src="images/olympic.jpeg" alt="Olympic Games" class="olympics-image" style="width: 100%;">
+                    </div>
+                    <div class="olymic-content1">
 
-                    <p>The Olympics is a leading international sporting event featuring summer and winter sports
-                        competitions in
-                        which thousands of athletes from around the world participate in a variety of competitions. The
-                        Olympic
-                        Games are considered the world's foremost sports competition with more than 200 nations
-                        participating.The modern Olympic Games were first held in 1896 in Athens, Greece, and have since grown to
-                        include
-                        more
-                        than 300 events in various sports disciplines. The Olympics are held every four years, with the
-                        Summer
-                        and Winter Games alternating every two years. The Games are a symbol of global unity and
-                        sportsmanship,
-                        bringing together athletes from diverse backgrounds to compete on the world stage. One of the most iconic aspects of the Olympics is the opening ceremony, which features a parade
-                        of
-                        nations, the lighting of the Olympic flame, and a cultural showcase of the host country. The
-                        Olympic
-                        motto, "Citius, Altius, Fortius" (Faster, Higher, Stronger), embodies the spirit of the Games
-                        and
-                        the
-                        pursuit of excellence by athletes.</p>
+                        <p>The Olympics is a leading international sporting event featuring summer and winter sports
+                            competitions in
+                            which thousands of athletes from around the world participate in a variety of competitions.
+                            The
+                            Olympic
+                            Games are considered the world's foremost sports competition with more than 200 nations
+                            participating.The modern Olympic Games were first held in 1896 in Athens, Greece, and have
+                            since grown to
+                            include
+                            more
+                            than 300 events in various sports disciplines. The Olympics are held every four years, with
+                            the
+                            Summer
+                            and Winter Games alternating every two years. The Games are a symbol of global unity and
+                            sportsmanship,
+                            bringing together athletes from diverse backgrounds to compete on the world stage. One of
+                            the most iconic aspects of the Olympics is the opening ceremony, which features a parade
+                            of
+                            nations, the lighting of the Olympic flame, and a cultural showcase of the host country. The
+                            Olympic
+                            motto, "Citius, Altius, Fortius" (Faster, Higher, Stronger), embodies the spirit of the
+                            Games
+                            and
+                            the
+                            pursuit of excellence by athletes.</p>
+                    </div>
+                </div>
+                <div class="second">
+
+                    <div class="olymic-content2">
+                        <p>The Olympics also have a significant impact on the host cities, often leading to the
+                            development
+                            of
+                            new
+                            infrastructure and the promotion of tourism. Hosting the Olympics is a prestigious honor and
+                            provides an
+                            opportunity for the host nation to showcase its culture and achievements to the world.Over
+                            the years, the Olympics have produced many memorable moments and legendary athletes, such as
+                            Usain
+                            Bolt, Michael Phelps, and Simone Biles. These athletes have inspired millions with their
+                            performances
+                            and have left a lasting legacy in the world of sports.</p>
+                    </div>
+                    <div class="olymic-image2">
+                        <img src="images/olympicparice.webp" alt="Olympic Flame" class="olympics-image"
+                            style="width: 100%;">
+                    </div>
                 </div>
             </div>
-            <div class="second">
-
-                <div class="olymic-content2" >
-                    <p>The Olympics also have a significant impact on the host cities, often leading to the development
-                        of
-                        new
-                        infrastructure and the promotion of tourism. Hosting the Olympics is a prestigious honor and
-                        provides an
-                        opportunity for the host nation to showcase its culture and achievements to the world.Over the years, the Olympics have produced many memorable moments and legendary athletes, such as
-                        Usain
-                        Bolt, Michael Phelps, and Simone Biles. These athletes have inspired millions with their
-                        performances
-                        and have left a lasting legacy in the world of sports.</p>
-                </div>
-                <div class="olymic-image2" >
-                    <img src="images/olympicparice.webp" alt="Olympic Flame" class="olympics-image" style="width: 100%;">
-                </div>
-            </div>
-        </div>
         </div>
 
     </section>
