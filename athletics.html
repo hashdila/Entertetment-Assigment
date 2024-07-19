@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athletics</title>
+    <link href='https://fonts.googleapis.com/css?family=Ballet' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bodoni Moda' rel='stylesheet'>
     <style>
         /* General Styles */
         body,
@@ -16,24 +21,13 @@
             overflow-x: hidden;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
         /* Navigation Bar */
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem;
-            background-color: #444;
+            background: linear-gradient(to bottom, #ffffff 0%, #444 100%);
         }
 
         .navbar .logo {
@@ -59,21 +53,17 @@
             text-decoration: underline;
         }
 
-        
-        
-
-    
-         
 
         .intro iframe {
             position: absolute;
             /* top: 50%;
             left: 50%; */
-            width: 100vw; /* Full viewport width */
-            height: 100vh; /* Full viewport height */
+            width: 100vw;
+            height: 100vh;
             transform: translate(-50%, -50%);
             z-index: -1;
-            pointer-events: none; /* Prevents interaction with the video */
+            pointer-events: none;
+            /* Prevents interaction with the video */
         }
 
         .introdu {
@@ -85,7 +75,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 20px;
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+            background: rgba(0, 0, 0, 0.5);
+
         }
 
         .intro {
@@ -123,19 +114,117 @@
         .introdu h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
+            font-family: 'Merienda One', cursive;
         }
 
-        /* .introdu p {
-            font-size: 1.5rem;
-            margin: 0;
-        } */
+        .introdu p {
+            font-family: 'Bilbo Swash Caps';font-size: 22px;
+        }
 
+        /* What is Athletics Section */
+        .athletics-info {
+            padding: 2rem;
+            text-align: center;
+            background: #fff;
+            color: #333;
+        }
 
+        .athletics-info h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-family: 'Cinzel Decorative';font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
 
+        .athletics-info h2 {
+            margin-bottom: 1rem;
+        }
 
+        .athletics-info p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
 
+        .athletics-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .athletics-info ul li {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            background: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        .contentarea {
+            display: flex;
+            background-image: radial-gradient(#d6d6d6,#ffffff);
+        }
+
+        .imagehistry {
+            width: 50%;
+            overflow: hidden;
+            text-align: center;
+            margin: auto;
+        }
+        
+
+        .imagehistry img {
+            width: 100%;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-sizing: border-box;
+            border: 2px solid #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .imagehistry img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .imagehistry p {
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 60%; /* Adjust width as needed */
+            margin: auto;
+        }
+
+        .list ul {
+            list-style-type: none;
+            padding: 0;
+            width: 48%; /* Adjust width as needed to fit within the container */
+            
+        }
+
+        .list li {
+            margin-bottom: 10px;
+            
+        }
+
+        .news-article:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            
+        }
 
         
+
+
+
+
+
+
+
 
         /* News Section */
         .news {
@@ -146,6 +235,7 @@
         .news h2 {
             text-align: center;
             margin-bottom: 1rem;
+            font-family: 'Merienda One', cursive;
         }
 
         .news-articles {
@@ -186,9 +276,18 @@
             line-height: 1.6;
         }
 
+
         .olympics h2 {
             text-align: center;
             margin-bottom: 1rem;
+            font-family: 'Cinzel Decorative';font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+        }
+
+
+
+        .olympics p {
+            font-family: 'Bodoni Moda';font-size: 22px;
         }
 
         .first {
@@ -207,30 +306,25 @@
         .olymic-image1 {
             width: 30%;
             /* margin: 10px; */
-            background-color: #444;
+            /* background-color: #444; */
+            padding-top: 100px;
         }
 
         .olymic-content1 {
-            /* margin: 10px; */
             padding: 20px;
             width: 70%;
             text-align: center;
-            /* background-color: aqua; */
         }
 
         .olymic-image2 {
             width: 30%;
-            /* height: auto; */
-            /* margin: 10px; */
-            /* border-radius: 10px; */
+            padding-top: 70px;
         }
 
         .olymic-content2 {
-            /* margin: 10px; */
             padding: 20px;
             width: 70%;
             text-align: center;
-            /* background-color: aqua; */
         }
 
 
@@ -242,6 +336,8 @@
         .athletes h2 {
             text-align: center;
             margin-bottom: 1rem;
+            font-family: 'Cinzel Decorative';font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
         }
 
         .athlete-cards {
@@ -274,6 +370,17 @@
             color: #555;
         }
 
+        .athlete-card img {
+            object-fit: cover;  
+            height: 100px;
+        }
+
+        .athlete-card:hover{
+                background-color: #aeaeae;
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
         /* Upcoming Events Section */
         .events {
             padding: 2rem;
@@ -283,6 +390,8 @@
         .events h2 {
             text-align: center;
             margin-bottom: 1rem;
+            font-family: 'Cinzel Decorative';font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
         }
 
         .event-list {
@@ -310,7 +419,7 @@
             padding: 1rem 0;
         }
 
-        /* Responsive Design */
+
         @media (max-width: 768px) {
             .navbar .nav-links {
                 flex-direction: column;
@@ -330,12 +439,15 @@
             .athlete-card {
                 margin: 1rem 0;
             }
+
+            
+
         }
     </style>
 </head>
 
 <body>
-    
+
 
     <!-- Navigation Bar -->
     <nav class="navbar">
@@ -352,15 +464,17 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        
+
     </section>
 
     <!-- Introduction Section -->
     <section class="intro">
-        <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UEhMDfLQJXk?si=etxHOeC24utIz2Oh&autoplay=1&mute=1&loop=1" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe> -->
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UEhMDfLQJXk?autoplay=1&mute=1&loop=1&playlist=UEhMDfLQJXk&controls=0" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
 
- 
+        <iframe width="560" height="315"
+            src="https://www.youtube-nocookie.com/embed/UEhMDfLQJXk?autoplay=1&mute=1&loop=1&playlist=UEhMDfLQJXk&controls=0"
+            frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+
+
         <div class="introdu">
             <h1>The World of Athletics</h1>
             <p>Athletics is a collection of sporting events that involve competitive running, jumping, throwing, and
@@ -371,9 +485,91 @@
         </div>
     </section>
 
+    <section class="athletics-info">
+        <h1>HISTORY of ATHLETICS</h1>
+        <div class="content">
+            <section id="ancient">
+                <div class="contentarea">
+                    <div class="contenthistry" style="width:50%; padding: 20px;font-family: 'Bodoni Moda';font-size: 22px; ">
+                        <p>Athletic contests in running, walking, jumping and throwing are among the oldest of all
+                            sports and
+                            their roots are prehistoric. Athletics events were depicted in the Ancient
+                                Egyptian tombs in Saqqara, with illustrations
+                            of running at the Heb Sed festival and high jumping appearing in tombs from as early as 2250
+                            BC. The
+                            <a href="https://en.wikipedia.org/wiki/Tailteann_Games" target="_blank">Tailteann Games</a>
+                            were an
+                            ancient Celtic festival in Ireland, founded c. 1800 BC, and the thirty-day meeting included
+                            running and
+                            stone-throwing among its sporting events. The original and only event at the first <a
+                                href="https://en.wikipedia.org/wiki/Ancient_Olympic_Games" target="_blank">Olympics</a>
+                            in 776 BC was a stadium-length running event known as the stadion. This later expanded to include
+                            throwing and jumping events within the ancient pentathlon. Athletics competitions also took place at
+                            other <a href="https://en.wikipedia.org/wiki/Panhellenic_Games" target="_blank">Panhellenic Games</a>,
+                            which were founded later around 500 BC.
+                        </p>
+                    </div>
+                    <div class="imagehistry">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Discobulus.jpg"
+                            style="width:300px; height: auto;">
+                        <p>A copy of the Ancient Greek statue <i>Discobolus</i>, portraying a discus thrower</p>
+                    </div>
+                </div>
+            </section>
+
+
+            
+                
+
+
+
+                <details>
+
+                    <summary>
+                 More Details....
+                    </summary>
+                    <section id="modern-era"></section>
+                    <h2 style="text-align: center;margin-bottom: 1rem;font-family: 'Cinzel Decorative';font-size: 40px;text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Modern era</h2>
+                    <div class="modern-era" style="text-align: justify; padding: 20px; font-family: 'Bodoni Moda';font-size: 22px;">
+                
+                        <p>The Cotswold Olympic Games, a sports festival which emerged in 17th century England, featured athletics in the form of sledgehammer throwing contests. Annually, from 1796 to 1798, L'Olympiade de la République was held in revolutionary France, and is an early forerunner to the modern Olympic Games. The premier event of this competition was a running event, but various ancient Greek disciplines were also on display. The 1796 Olympiade marked the introduction of the metric system into the sport.</p>
+                        <p>Athletics competitions were held about 1812 at the Royal Military College, Sandhurst, and in 1840 in Shrewsbury, Shropshire at the Royal Shrewsbury School Hunt. The Royal Military Academy at Woolwich held an organised competition in 1849, and a regular series of closed meetings open only to undergraduates, was held by Exeter College, Oxford, from 1850. The annual Wenlock Olympian Games, first held in 1850 in Wenlock, England, incorporated athletics events into its sports programme.</p>
+                        <p>The first modern-style indoor athletics meetings were recorded shortly after in the 1860s, including a meet at Ashburnham Hall in London which featured four running events and a triple jump competition.</p>
+                        <p>The Amateur Athletic Association (AAA) was established in England in 1880 as the first national body for the sport of athletics and began holding its own annual athletics competition – the AAA Championships. The United States also began holding an annual national competition – the USA Outdoor Track and Field Championships – first held in 1876 by the New York Athletic Club. Athletics became codified and standardized via the English AAA and other general sports organisations in the late 19th century, such as the Amateur Athletic Union (founded in the US in 1888) and the Union des sociétés françaises de sports athlétiques (founded in France in 1889).</p>
+                        <p>An athletics competition was included in the first modern Olympic Games in 1896 and it has been one of the foremost competitions at the quadrennial multi-sport event ever since. Originally for men only, the 1928 Olympics saw the introduction of women's events in the athletics programme. Athletics is part of the Paralympic Games since the inaugural Games in 1960. Athletics has a very high profile during major championships, especially the Olympics, but otherwise is less popular.</p>
+                        <p>An international governing body, the International Amateur Athletics Federation (IAAF), was founded in 1912. It enforced amateur sport status on competitions during much of the 20th century. Professional competition continued at a low level, becoming increasingly more common as the century progressed. The International Track Association briefly formed a professional track and field circuit in the United States in the 1970s. Athletes used their increasing status to push for remuneration and the IAAF responded with the IAAF Golden Events series and the establishment an outdoor World Championships in 1983, including track and field, racewalking and a marathon event. In modern times, athletes can receive money for racing, putting an end to the so-called "amateurism" that existed before. The global body updated its name to the International Association of Athletics Federations in 2001, moving away from its amateur origins, before taking on its current name World Athletics in 2019.</p>
+                        <p>The Comité International Sports des Sourds had been formed by 1922, to govern international deaf sports, including athletics.</p>
+                        <p>The first organized international competitions for athletes with a physical disability (not deaf) began in 1952, when the first international Stoke Mandeville Games were organized for World War II veterans. This only included athletes in a wheelchair. This inspired the first Paralympic Games, held in 1960. Competitions would over time be expanded to include mainly athletes with amputation, cerebral palsy and visual impairment, in addition to wheelchair events.</p>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>Sprint Races (100m, 200m, 400m)</li>
+                            <li>Middle Distance Races (800m, 1500m)</li>
+                            <li>Long Distance Races (5000m, 10000m)</li>
+                            <li>Hurdles (110m hurdles, 400m hurdles)</li>
+                            <li>Relay Races (4x100m, 4x400m)</li>
+                        </ul>
+                        <ul>
+                            <li>Jumping Events (Long Jump, High Jump, Triple Jump, Pole Vault)</li>
+                            <li>Throwing Events (Shot Put, Discus Throw, Javelin Throw, Hammer Throw)</li>
+                            <li>Decathlon and Heptathlon</li>
+                            <li>Marathon</li>
+                            <li>Race Walking</li>
+                        </ul>
+                    </div>
+                
+                  </details>
+
+
+                
+            </section>
+        </div>
+        
+    </section>
+
     <!-- News Section -->
     <section class="news">
-        <h2>Latest News</h2>
+        <h2 style="font-family: 'Cinzel Decorative';font-size: 40px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Latest News</h2>
         <div class="news-articles">
             <div class="news-article">
                 <img src="images/run.jpeg" alt="News 1">
@@ -409,47 +605,27 @@
                     <div class="olymic-content1">
 
                         <p>The Olympics is a leading international sporting event featuring summer and winter sports
-                            competitions in
-                            which thousands of athletes from around the world participate in a variety of competitions.
-                            The
-                            Olympic
-                            Games are considered the world's foremost sports competition with more than 200 nations
+                            competitions in which thousands of athletes from around the world participate in a variety of competitions.
+                            The Olympic Games are considered the world's foremost sports competition with more than 200 nations
                             participating.The modern Olympic Games were first held in 1896 in Athens, Greece, and have
-                            since grown to
-                            include
-                            more
-                            than 300 events in various sports disciplines. The Olympics are held every four years, with
-                            the
-                            Summer
-                            and Winter Games alternating every two years. The Games are a symbol of global unity and
-                            sportsmanship,
-                            bringing together athletes from diverse backgrounds to compete on the world stage. One of
+                            since grown to include more than 300 events in various sports disciplines. The Olympics are held every four years, with
+                            the Summer and Winter Games alternating every two years. The Games are a symbol of global unity and
+                            sportsmanship, bringing together athletes from diverse backgrounds to compete on the world stage. One of
                             the most iconic aspects of the Olympics is the opening ceremony, which features a parade
-                            of
-                            nations, the lighting of the Olympic flame, and a cultural showcase of the host country. The
-                            Olympic
-                            motto, "Citius, Altius, Fortius" (Faster, Higher, Stronger), embodies the spirit of the
-                            Games
-                            and
-                            the
-                            pursuit of excellence by athletes.</p>
+                            of nations, the lighting of the Olympic flame, and a cultural showcase of the host country. The
+                            Olympic motto, "Citius, Altius, Fortius" (Faster, Higher, Stronger), embodies the spirit of the
+                            Games and the pursuit of excellence by athletes.</p>
                     </div>
                 </div>
                 <div class="second">
 
                     <div class="olymic-content2">
                         <p>The Olympics also have a significant impact on the host cities, often leading to the
-                            development
-                            of
-                            new
-                            infrastructure and the promotion of tourism. Hosting the Olympics is a prestigious honor and
-                            provides an
-                            opportunity for the host nation to showcase its culture and achievements to the world.Over
+                            development of new infrastructure and the promotion of tourism. Hosting the Olympics is a prestigious honor and
+                            provides an opportunity for the host nation to showcase its culture and achievements to the world.Over
                             the years, the Olympics have produced many memorable moments and legendary athletes, such as
-                            Usain
-                            Bolt, Michael Phelps, and Simone Biles. These athletes have inspired millions with their
-                            performances
-                            and have left a lasting legacy in the world of sports.</p>
+                            Usain Bolt, Michael Phelps, and Simone Biles. These athletes have inspired millions with their
+                            performances and have left a lasting legacy in the world of sports. <a href="https://en.wikipedia.org/wiki/Olympic_Games">more..</a></p>
                     </div>
                     <div class="olymic-image2">
                         <img src="images/olympicparice.webp" alt="Olympic Flame" class="olympics-image"
