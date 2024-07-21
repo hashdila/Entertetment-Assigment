@@ -102,7 +102,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            /* background: rgba(0, 0, 0, 0.5); */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -111,10 +111,18 @@
             text-align: center;
         }
 
+        /* .introdu {
+            background-image: radial-gradient(rgba(62, 3, 255, 0.2), rgba(244, 244, 244, 0.2));
+        } */
+
+
+
         .introdu h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
             font-family: 'Merienda One', cursive;
+            /* text-shadow: 2px 2px 10px rgba(0,0,0,0.9); */
+            
         }
 
         .introdu p {
@@ -270,62 +278,65 @@
             color: #555;
         }
 
-        .olympics-content {
-            width: 90%;
-            margin: auto;
-            line-height: 1.6;
-        }
+        /* Olympics Section */
+.olympics {
+    padding: 2rem;
+    background-image: radial-gradient(rgba(62, 3, 255, 0.2), rgba(255, 247, 0, 0.994), rgb(255, 3, 3, 0.3), rgb(3, 255, 62, 0.3), rgb(49, 3, 255, 0.3));
+    color: #333;
+}
+
+.olympics-content {
+    width: 90%;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.olympics h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+.olympics p {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 22px;
+    padding: 30px;
+}
+
+.first, .second {
+    /* display: flex; */
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: justify;
+    /* margin-bottom: 2rem; */
+}
 
 
-        .olympics h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-            font-family: 'Cinzel Decorative';font-size: 40px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
-        }
+.olympic-content1, .olympic-content2 {
+    padding: 20px;
+    width: 100%;
+}
 
+.olympics-image {
+    width: 60%; /* Increased the width */
+    height: auto; /* Adjust the height as needed */
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 2px solid #000;
+    transition: width 2s, height 2s, transform 2s;
+}
 
+.olympics-image:hover {
+    width: 80%; /* Increased the width on hover */
+    transform: rotate(180deg);
+}
 
-        .olympics p {
-            font-family: 'Bodoni Moda';font-size: 22px;
-        }
-
-        .first {
-            display: flex;
-            text-align: justify;
-
-
-        }
-
-        .second {
-            display: flex;
-            text-align: justify;
-
-        }
-
-        .olymic-image1 {
-            width: 30%;
-            /* margin: 10px; */
-            /* background-color: #444; */
-            padding-top: 100px;
-        }
-
-        .olymic-content1 {
-            padding: 20px;
-            width: 70%;
-            text-align: center;
-        }
-
-        .olymic-image2 {
-            width: 30%;
-            padding-top: 70px;
-        }
-
-        .olymic-content2 {
-            padding: 20px;
-            width: 70%;
-            text-align: center;
-        }
 
 
         /* Featured Athletes Section */
@@ -573,21 +584,37 @@
         <div class="news-articles">
             <div class="news-article">
                 <img src="images/run.jpeg" alt="News 1">
-                <h3>Breaking: New World Record</h3>
-                <p>In an astonishing display of speed and endurance, a new world record has been set in the men's 100m
-                    sprint.</p>
+                <h3>2024 PARIS OLYMPIC GAMES: SHELLY-ANN FRASER-PRYCE WITHDRAWS FROM 100M RACE IN SWITZERLAND AFTER DISCOMFORT</h3>
+                <p>Three-time Olympic gold medallist Shelly-Ann Fraser-Pryce pulled out of her 100m heat at the World Athletics Continental Tour meet in Switzerland after saying she "felt something" during warm-ups. She was scheduled to compete in her first international race of the season in Luzern as she prepares for next month's Paris Games. She said earlier this year that Paris will be her final Olympics.
+                </p>
             </div>
             <div class="news-article">
-                <img src="images/medle.avif" alt="News 2">
-                <h3>Upcoming Championships</h3>
-                <p>The athletics world is gearing up for the upcoming championships, with athletes from all over the
-                    world set to compete.</p>
+                <img src="https://dims.apnews.com/dims4/default/e41f219/2147483647/strip/true/crop/2862x1908+0+0/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Ff8%2Fc6%2F3bbeb36042f3339d8302d3f4a9aa%2F597a18e165464eb49d443bff526f157f" alt="News 2">
+                <h3>SIMONE BILES QUALIFIES FOR 2024 PARIS OLYMPIC GAMES WITH IMPRESSIVE SHOWING AT US TRIALS EVENT</h3>
+                <p>Simone Biles will compete at her third Olympic Games, when she takes part in the 2024 Olympics in Paris this summer. The 27-year-old American qualified for the US team on Sunday at the trials for the upcoming event. Biles took a two-year break from the sport before excelling once more upon her return, winning two national championships and one world title.</p>
             </div>
             <div class="news-article">
-                <img src="images/pros.png" alt="News 3">
-                <h3>Training Tips from the Pros</h3>
-                <p>Top athletes share their training secrets and tips to help you improve your performance in various
-                    athletic events.</p>
+                <img src="https://s.rfi.fr/media/display/3c0aa334-d1ea-11ec-aa9d-005056bf30b7/w:980/p:16x9/e7b0326bb5bfc99f128ec635f9362edeceef00bb.jpg" alt="News 3">
+                <h3>GIANMARCO TAMBERI SAYS JOINT OLYMPIC GOLD ‘TRULY UNIQUE’ – BUT MUTAZ BARSHIM WARNS IT ‘WILL NEVER HAPPEN AGAIN</h3>
+                <p>The men's high jump promises to be appointment viewing at the Paris Olympic Games if Tokyo 2020 is anything to go on. Three years ago, Gianmarco Tamberi and Mutaz Barshim shared gold in a historic moment that the Italian described as "truly unique". Three-time world champion Barshim has warned "it will never happen again" after their famous moment of sporting collaboration.</p>
+            </div>
+        </div>
+            <div class="news-articles">
+            <div class="news-article">
+                <img src="https://static.ffx.io/images/$zoom_1%2C$multiply_1%2C$ratio_1.777778%2C$width_1396%2C$x_0%2C$y_0/t_crop_custom/c_scale%2Cw_620%2Cq_88%2Cf_auto/1c2faa77537946c734bc57f0190cd565e3fc9a7c" alt="News 4">
+                <h3>DIAMOND LEAGUE: JAKOB INGEBRIGTSEN ‘EXCITED FOR PARIS’ AFTER NEW 1500M RECORD, JESSICA HULL SETS WORLD-BEST 2000M TIME</h3>
+                <p>Ahead of his 1500m title defence at the Olympic Games, Jakob Ingebrigtsen beat his own European record at the Diamond League in Monaco on Friday. The Norwegian breezed to victory in a time of 3:26.73 and then said he was "excited" about defending his title in Paris next month. Elsewhere, Jessica Hull broke the 2000m world record and Ben Pattison set the second-fastest 800m time in British history.
+                </p>
+            </div>
+            <div class="news-article">
+                <img src="https://ichef.bbci.co.uk/news/2048/cpsprodpb/36c3/live/ac9c79e0-36f8-11ef-a982-d530d9dbd594.jpg" alt="News 5">
+                <h3>PARIS OLYMPICS: DINA ASHER-SMITH, KEELY HODGKINSON AND JOSH KERR LEAD STAR-STUDDED TEAM GB ATHLETICS SQUAD</h3>
+                <p>Team GB's athletics squad for Paris 2024 is packed with medal potential as the likes of Dina Asher-Smith, Keely Hodgkinson and Katarina Johnson-Thompson chase a first Olympic title. Asher-Smith will compete in all three sprint events as she looks to claim a first individual medal at the Games, while Hodgkinson looks primed to climb onto the top step of the podium after three superb years.</p>
+            </div>
+            <div class="news-article">
+                <img src="https://i0.wp.com/imgresizer.eurosport.com/unsafe/2560x1440/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/06/27/image-1ae0832f-ad0f-4fdc-81b0-b7efa0ebe954-85-2560-1440.jpeg?w=1200&resize=1200,0&ssl=1" alt="News 3">
+                <h3>PARIS 2024: ‘HURT AND DEVASTATED’ - ACHILLES INJURY RULES OLYMPIC SPRINT CHAMPION ELAINE THOMPSON-HERAH OUT OF GAMES</h3>
+                <p>Jamaica’s Elaine Thompson-Herah has vowed to return after an Achilles injury ruled her out of competing at the Paris Olympics. The 31-year-old - who celebrates her 32nd birthday on Friday - had already opted out of competing in the 200m at the Jamaican trials, ending her chances of achieving a historic ‘triple double’ of three consecutive Olympic victories in the 100m and 200m.</p>
             </div>
         </div>
     </section>
@@ -600,7 +627,7 @@
             <div class="olympics-content ">
                 <div class="first">
                     <div class="olymic-image1">
-                        <img src="images/olympic.jpeg" alt="Olympic Games" class="olympics-image" style="width: 100%;">
+                        <img src="images/olympic.jpeg" alt="Olympic Games" class="olympics-image" >
                     </div>
                     <div class="olymic-content1">
 
@@ -629,7 +656,7 @@
                     </div>
                     <div class="olymic-image2">
                         <img src="images/olympicparice.webp" alt="Olympic Flame" class="olympics-image"
-                            style="width: 100%;">
+                            >
                     </div>
                 </div>
             </div>
@@ -646,36 +673,42 @@
                 <h3>Usain Bolt</h3>
                 <p>Known as the fastest man alive, Usain Bolt has won numerous gold medals and set multiple world
                     records.</p>
+                    <p><a href="athleticdata.html#usain-bolt">more..</a></p>
             </div>
             <div class="athlete-card">
                 <img src="images/felix.webp" alt="Athlete 2">
                 <h3>Allyson Felix</h3>
                 <p>With an impressive career in track and field, Allyson Felix is a multiple-time Olympic and World
                     Champion.</p>
+                    <p><a href="athleticdata.html">more..</a></p>
             </div>
             <div class="athlete-card">
                 <img src="images/farah.jpeg" alt="Athlete 3">
                 <h3>Mo Farah</h3>
                 <p>Mo Farah is a long-distance runner who has won gold medals in both the 5,000 and 10,000 meters at the
                     Olympics.</p>
+                    <p><a href="athleticdata.html">more..</a></p>
             </div>
             <div class="athlete-card">
                 <img src="images/shelly.webp" alt="Athlete 4">
                 <h3>Shelly-Ann Fraser-Pryce</h3>
                 <p>Shelly-Ann Fraser-Pryce is a Jamaican track and field sprinter who has won multiple Olympic gold
                     medals.</p>
+                    <p><a href="athleticdata.html">more..</a></p>
             </div>
             <div class="athlete-card">
                 <img src="images/chopra.webp" alt="Athlete 5">
                 <h3>Neeraj Chopra</h3>
                 <p>Neeraj Chopra is an Indian javelin thrower who has won gold medals at the Olympics and Asian Games.
                 </p>
+                <p><a href="athleticdata.html">more..</a></p>
             </div>
             <div class="athlete-card">
                 <img src="images/hill.jpeg" alt="Athlete 6">
                 <h3>Jessica Ennis-Hill</h3>
                 <p>Jessica Ennis-Hill is a retired British track and field athlete who was the 2012 Olympic heptathlon
                     champion.</p>
+                    <p><a href="athleticdata.html">more..</a></p>
             </div>
         </div>
     </section>

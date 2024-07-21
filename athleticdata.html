@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletes</title>
+    <link href='https://fonts.googleapis.com/css?family=Cactus Classical Serif' rel='stylesheet'>
+    <style>
+        /* Reset some default styling */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cactus Classical Serif';font-size: 22px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 10px;
+    position: relative; /* Allows absolute positioning of back-to-top button */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0;
+}
+
+nav .back-button a {
+    color: rgb(128, 0, 0); /* Green color for the Back link */
+}
+
+section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: #0056b3;
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li class="back-button"><a href="athletics.html">Back</a></li>
+            <li><a href="#usain-bolt">Usain Bolt</a></li>
+            <li><a href="#allyson-felix">Allyson Felix</a></li>
+            <li><a href="#mo-farah">Mo Farah</a></li>
+            <li><a href="#shelly-ann-fraser-pryce">Shelly-Ann Fraser-Pryce</a></li>
+            <li><a href="#neeraj-chopra">Neeraj Chopra</a></li>
+            <li><a href="#jessica-ennis-hill">Jessica Ennis-Hill</a></li>
+        </ul>
+    </nav>
+
+    <section id="usain-bolt">
+        <h2>Usain Bolt</h2>
+        <img src="images/usain.avif" alt="Usain Bolt">
+        <p>Usain Bolt, known as the fastest man alive, has won numerous gold medals and set multiple world records in sprinting events. He holds the world records for the 100 meters, 200 meters, and 4 × 100 meters relay. Bolt's charismatic personality and extraordinary speed have made him a global icon in athletics.</p>
+    </section>
+    
+    <section id="allyson-felix">
+        <h2>Allyson Felix</h2>
+        <img src="images/felix.webp" alt="Allyson Felix">
+        <p>Allyson Felix is one of the most decorated athletes in track and field history. She has won multiple Olympic and World Championship medals, specializing in the 200 meters, 400 meters, and 4 × 400 meters relay. Felix is known for her speed, endurance, and advocacy for athletes' rights.</p>
+    </section>
+    
+    <section id="mo-farah">
+        <h2>Mo Farah</h2>
+        <img src="images/farah.jpeg" alt="Mo Farah">
+        <p>Mo Farah is a British long-distance runner who has achieved remarkable success in the 5,000 meters and 10,000 meters events. He has won gold medals at the Olympics and World Championships, becoming one of the most successful distance runners in history. Farah's signature "Mobot" celebration is recognized worldwide.</p>
+    </section>
+    
+    <section id="shelly-ann-fraser-pryce">
+        <h2>Shelly-Ann Fraser-Pryce</h2>
+        <img src="images/shelly.webp" alt="Shelly-Ann Fraser-Pryce">
+        <p>Shelly-Ann Fraser-Pryce is a Jamaican sprinter who has won multiple Olympic gold medals in the 100 meters and 200 meters events. Known for her explosive speed and consistency, she is considered one of the greatest female sprinters of all time. Fraser-Pryce's success has made her a role model for aspiring athletes around the world.</p>
+    </section>
+    
+    <section id="neeraj-chopra">
+        <h2>Neeraj Chopra</h2>
+        <img src="images/chopra.webp" alt="Neeraj Chopra">
+        <p>Neeraj Chopra is an Indian javelin thrower who has achieved historic success in his sport. He won the gold medal at the Tokyo 2020 Olympics, becoming the first Indian athlete to win an Olympic gold in track and field. Chopra's achievements have inspired a new generation of athletes in India.</p>
+    </section>
+    
+    <section id="jessica-ennis-hill">
+        <h2>Jessica Ennis-Hill</h2>
+        <img src="images/hill.jpeg" alt="Jessica Ennis-Hill">
+        <p>Jessica Ennis-Hill is a retired British track and field athlete who specialized in the heptathlon. She won the gold medal at the 2012 London Olympics and is a multiple-time World Champion. Ennis-Hill is celebrated for her versatility, determination, and impact on women's athletics.</p>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        &uarr;
+    </button>
+</body>
+</html>
