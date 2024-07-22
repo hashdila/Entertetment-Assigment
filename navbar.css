@@ -1,0 +1,31 @@
+/* Navigation Bar */
+        .navbarh {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: linear-gradient(to bottom, #797979 0%, #444 100%);
+        }
+
+        .navbarh .logo {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .navbarh .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbarh .nav-links li {
+            margin: 0 1rem;
+        }
+
+        .navbarh .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbarh .nav-links a:hover {
+            text-decoration: underline;
+        }
