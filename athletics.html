@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Bodoni Moda' rel='stylesheet'>
     <link rel="stylesheet" href="navbar.css">
-    
+
 
     <style>
         /* General Styles */
@@ -24,7 +24,7 @@
             overflow-x: hidden;
         }
 
-        
+
 
 
         .intro iframe {
@@ -84,9 +84,7 @@
             text-align: center;
         }
 
-        /* .introdu {
-            background-image: radial-gradient(rgba(62, 3, 255, 0.2), rgba(244, 244, 244, 0.2));
-        } */
+
 
 
 
@@ -95,11 +93,75 @@
             margin-bottom: 1rem;
             font-family: 'Merienda One', cursive;
             /* text-shadow: 2px 2px 10px rgba(0,0,0,0.9); */
+            animation-name: fontstyle;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation: moveRight 10s infinite;
+            position: relative;
+        }
+
+
+        @keyframes fontstyle {
+            from {
+                color: rgb(0, 68, 255);
+            }
+
+            to {
+                color: rgb(255, 255, 255);
+            }
+
+        }
+
+        @keyframes moveRight {
+            0% {
+                left: 0;
+            }
+
+            50% {
+                left: 200px;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+
+
+
+        .introdu p {
+            font-family: 'Bilbo Swash Caps';
+            font-size: 22px;
+        }
+
+
+        /* Navigation Bar */
+        .navbarsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: linear-gradient(#4b4b4b, #797979, #444);
             
         }
 
-        .introdu p {
-            font-family: 'Bilbo Swash Caps';font-size: 22px;
+
+
+        .navbarsection .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbarsection .nav-links li {
+            margin: 0 1rem;
+        }
+
+        .navbarsection .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbarsection .nav-links a:hover {
+            text-decoration: underline;
         }
 
         /* What is Athletics Section */
@@ -113,8 +175,9 @@
         .athletics-info h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            font-family: 'Cinzel Decorative';font-size: 40px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+            font-family: 'Cinzel Decorative';
+            font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
         }
 
         .athletics-info h2 {
@@ -140,7 +203,7 @@
 
         .contentarea {
             display: flex;
-            background-image: radial-gradient(#d6d6d6,#ffffff);
+            background-image: radial-gradient(#d6d6d6, #ffffff);
         }
 
         .imagehistry {
@@ -149,7 +212,7 @@
             text-align: center;
             margin: auto;
         }
-        
+
 
         .imagehistry img {
             width: 100%;
@@ -158,13 +221,13 @@
             box-sizing: border-box;
             border: 2px solid #000;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            
+
         }
 
         .imagehistry img:hover {
             transform: scale(1.2);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            
+
         }
 
         .imagehistry p {
@@ -176,29 +239,31 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            width: 60%; /* Adjust width as needed */
+            width: 60%;
+            /* Adjust width as needed */
             margin: auto;
         }
 
         .list ul {
             list-style-type: none;
             padding: 0;
-            width: 48%; /* Adjust width as needed to fit within the container */
-            
+            width: 48%;
+            /* Adjust width as needed to fit within the container */
+
         }
 
         .list li {
             margin-bottom: 10px;
-            
+
         }
 
         .news-article:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            
+
         }
 
-        
+
 
 
 
@@ -252,63 +317,68 @@
         }
 
         /* Olympics Section */
-.olympics {
-    padding: 2rem;
-    background-image: radial-gradient(rgba(62, 3, 255, 0.2), rgba(255, 247, 0, 0.994), rgb(255, 3, 3, 0.3), rgb(3, 255, 62, 0.3), rgb(49, 3, 255, 0.3));
-    color: #333;
-}
+        .olympics {
+            padding: 2rem;
+            background-image: radial-gradient(rgba(62, 3, 255, 0.2), rgba(255, 247, 0, 0.994), rgb(255, 3, 3, 0.3), rgb(3, 255, 62, 0.3), rgb(49, 3, 255, 0.3));
+            color: #333;
+        }
 
-.olympics-content {
-    width: 90%;
-    margin: auto;
-    line-height: 1.6;
-}
+        .olympics-content {
+            width: 90%;
+            margin: auto;
+            line-height: 1.6;
+        }
 
-.olympics h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-family: 'Cinzel Decorative', serif;
-    font-size: 40px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
-}
+        .olympics h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-family: 'Cinzel Decorative', serif;
+            font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+        }
 
-.olympics p {
-    font-family: 'Bodoni Moda', serif;
-    font-size: 22px;
-    padding: 30px;
-}
+        .olympics p {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 22px;
+            padding: 30px;
+        }
 
-.first, .second {
-    /* display: flex; */
-    flex-wrap: nowrap;
-    align-items: center;
-    text-align: justify;
-    /* margin-bottom: 2rem; */
-}
+        .first,
+        .second {
+            /* display: flex; */
+            flex-wrap: nowrap;
+            align-items: center;
+            text-align: justify;
+            /* margin-bottom: 2rem; */
+        }
 
 
-.olympic-content1, .olympic-content2 {
-    padding: 20px;
-    width: 100%;
-}
+        .olympic-content1,
+        .olympic-content2 {
+            padding: 20px;
+            width: 100%;
+        }
 
-.olympics-image {
-    width: 60%; /* Increased the width */
-    height: auto; /* Adjust the height as needed */
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    border: 2px solid #000;
-    transition: width 2s, height 2s, transform 2s;
-}
+        .olympics-image {
+            width: 60%;
+            /* Increased the width */
+            height: auto;
+            /* Adjust the height as needed */
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            border: 2px solid #000;
+            transition: width 2s, height 2s, transform 2s;
+        }
 
-.olympics-image:hover {
-    width: 80%; /* Increased the width on hover */
-    transform: rotate(180deg);
-}
+        .olympics-image:hover {
+            width: 80%;
+            /* Increased the width on hover */
+            transform: rotate(180deg);
+        }
 
 
 
@@ -320,8 +390,9 @@
         .athletes h2 {
             text-align: center;
             margin-bottom: 1rem;
-            font-family: 'Cinzel Decorative';font-size: 40px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+            font-family: 'Cinzel Decorative';
+            font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
         }
 
         .athlete-cards {
@@ -355,15 +426,126 @@
         }
 
         .athlete-card img {
-            object-fit: cover;  
+            object-fit: cover;
             height: 100px;
         }
 
-        .athlete-card:hover{
-                background-color: #aeaeae;
-                transform: scale(1.05);
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        .athlete-card:hover {
+            background-color: #aeaeae;
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+
+
+        .olympics-section {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        .olympics-section h1 {
+            font-family: 'Cinzel Decorative';
+            font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+            text-align: center;
+
+
+
+        }
+
+        .olympics-section h2 {
+            text-align: center;
+            color: #333;
+            font-family: 'Bodoni Moda', serif;
+            font-size: 22px;
+
+        }
+
+        .images,
+        .venue-images,
+        .athlete-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .images img,
+        .venue-image {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-image {
+            flex: 2 1 600px;
+        }
+
+        .map-image,
+        .venue-image {
+            flex: 1 1 300px;
+        }
+
+        .olympic-content2024,
+        .additional-content {
+            text-align: center;
+            color: #242424;
+            font-family: 'Bodoni Moda', serif;
+        }
+
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+
+        }
+
+        .olympic-lis li {
+            margin: 5px 0;
+            font-family: 'Bodoni Moda', serif;
+            font-size: 22px;
+
+        }
+
+        @media (max-width: 768px) {
+
+            .images,
+            .venue-images,
+            .athlete-cards {
+                flex-direction: column;
+                align-items: center;
             }
+
+            .main-image,
+            .map-image,
+            .venue-image,
+            .athlete-card {
+                flex: none;
+                width: 90%;
+            }
+
+            .contentarea{
+                flex-direction: column;
+            }
+
+
+        }
+
 
         /* Upcoming Events Section */
         .events {
@@ -374,8 +556,9 @@
         .events h2 {
             text-align: center;
             margin-bottom: 1rem;
-            font-family: 'Cinzel Decorative';font-size: 40px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+            font-family: 'Cinzel Decorative';
+            font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
         }
 
         .event-list {
@@ -391,32 +574,38 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .event-list h3 {
+         .event-list h3 {
             margin: 0 0 0.5rem 0;
         }
 
-        .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease;
-}
+        .event-list :hover {
+            background-color: #2a2a2a;
+            color: #fff;
 
-.back-to-top:hover {
-    background: #0056b3;
-}
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background: #0056b3;
+        }
 
 
         /* Footer */
@@ -424,7 +613,10 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1rem 0;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
 
 
@@ -448,7 +640,7 @@
                 margin: 1rem 0;
             }
 
-            
+
 
         }
     </style>
@@ -467,6 +659,7 @@
             <li><a href="racing.html">Racing</a></li>
             <li><a href="athletics.html">Athletics</a></li>
             <li><a href="contact.html">Contact</a></li>
+
         </ul>
     </nav>
 
@@ -493,16 +686,29 @@
         </div>
     </section>
 
-    <section class="athletics-info">
+    <!-- Navigation Bar -->
+    <nav class="navbarsection">
+        <ul class="nav-links">
+            <li><a href="#athletics-info">History of athlatics</a></li>
+            <li><a href="#news">Latest News</a></li>
+            <li><a href="#olympics">Histry of olympic</a></li>
+            <li><a href="#athletes">Featured Athletes</a></li>
+            <li><a href="#olympics-section">2024 Olympic</a></li>
+            <li><a href="#events">Events</a></li>
+        </ul>
+    </nav>
+
+    <section class="athletics-info" id="athletics-info">
         <h1>HISTORY of ATHLETICS</h1>
         <div class="content">
             <section id="ancient">
                 <div class="contentarea">
-                    <div class="contenthistry" style="width:50%; padding: 20px;font-family: 'Bodoni Moda';font-size: 22px; ">
+                    <div class="contenthistry"
+                        style="width:50%; padding: 20px;font-family: 'Bodoni Moda';font-size: 22px; ">
                         <p>Athletic contests in running, walking, jumping and throwing are among the oldest of all
                             sports and
                             their roots are prehistoric. Athletics events were depicted in the Ancient
-                                Egyptian tombs in Saqqara, with illustrations
+                            Egyptian tombs in Saqqara, with illustrations
                             of running at the Heb Sed festival and high jumping appearing in tombs from as early as 2250
                             BC. The
                             <a href="https://en.wikipedia.org/wiki/Tailteann_Games" target="_blank">Tailteann Games</a>
@@ -511,9 +717,12 @@
                             running and
                             stone-throwing among its sporting events. The original and only event at the first <a
                                 href="https://en.wikipedia.org/wiki/Ancient_Olympic_Games" target="_blank">Olympics</a>
-                            in 776 BC was a stadium-length running event known as the stadion. This later expanded to include
-                            throwing and jumping events within the ancient pentathlon. Athletics competitions also took place at
-                            other <a href="https://en.wikipedia.org/wiki/Panhellenic_Games" target="_blank">Panhellenic Games</a>,
+                            in 776 BC was a stadium-length running event known as the stadion. This later expanded to
+                            include
+                            throwing and jumping events within the ancient pentathlon. Athletics competitions also took
+                            place at
+                            other <a href="https://en.wikipedia.org/wiki/Panhellenic_Games" target="_blank">Panhellenic
+                                Games</a>,
                             which were founded later around 500 BC.
                         </p>
                     </div>
@@ -526,118 +735,197 @@
             </section>
 
 
-            
-                
 
 
 
-                <details>
-
-                    <summary>
-                 More Details....
-                    </summary>
-                    <section id="modern-era"></section>
-                    <h2 style="text-align: center;margin-bottom: 1rem;font-family: 'Cinzel Decorative';font-size: 40px;text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Modern era</h2>
-                    <div class="modern-era" style="text-align: justify; padding: 20px; font-family: 'Bodoni Moda';font-size: 22px;">
-                
-                        <p>The Cotswold Olympic Games, a sports festival which emerged in 17th century England, featured athletics in the form of sledgehammer throwing contests. Annually, from 1796 to 1798, L'Olympiade de la République was held in revolutionary France, and is an early forerunner to the modern Olympic Games. The premier event of this competition was a running event, but various ancient Greek disciplines were also on display. The 1796 Olympiade marked the introduction of the metric system into the sport.</p>
-                        <p>Athletics competitions were held about 1812 at the Royal Military College, Sandhurst, and in 1840 in Shrewsbury, Shropshire at the Royal Shrewsbury School Hunt. The Royal Military Academy at Woolwich held an organised competition in 1849, and a regular series of closed meetings open only to undergraduates, was held by Exeter College, Oxford, from 1850. The annual Wenlock Olympian Games, first held in 1850 in Wenlock, England, incorporated athletics events into its sports programme.</p>
-                        <p>The first modern-style indoor athletics meetings were recorded shortly after in the 1860s, including a meet at Ashburnham Hall in London which featured four running events and a triple jump competition.</p>
-                        <p>The Amateur Athletic Association (AAA) was established in England in 1880 as the first national body for the sport of athletics and began holding its own annual athletics competition – the AAA Championships. The United States also began holding an annual national competition – the USA Outdoor Track and Field Championships – first held in 1876 by the New York Athletic Club. Athletics became codified and standardized via the English AAA and other general sports organisations in the late 19th century, such as the Amateur Athletic Union (founded in the US in 1888) and the Union des sociétés françaises de sports athlétiques (founded in France in 1889).</p>
-                        <p>An athletics competition was included in the first modern Olympic Games in 1896 and it has been one of the foremost competitions at the quadrennial multi-sport event ever since. Originally for men only, the 1928 Olympics saw the introduction of women's events in the athletics programme. Athletics is part of the Paralympic Games since the inaugural Games in 1960. Athletics has a very high profile during major championships, especially the Olympics, but otherwise is less popular.</p>
-                        <p>An international governing body, the International Amateur Athletics Federation (IAAF), was founded in 1912. It enforced amateur sport status on competitions during much of the 20th century. Professional competition continued at a low level, becoming increasingly more common as the century progressed. The International Track Association briefly formed a professional track and field circuit in the United States in the 1970s. Athletes used their increasing status to push for remuneration and the IAAF responded with the IAAF Golden Events series and the establishment an outdoor World Championships in 1983, including track and field, racewalking and a marathon event. In modern times, athletes can receive money for racing, putting an end to the so-called "amateurism" that existed before. The global body updated its name to the International Association of Athletics Federations in 2001, moving away from its amateur origins, before taking on its current name World Athletics in 2019.</p>
-                        <p>The Comité International Sports des Sourds had been formed by 1922, to govern international deaf sports, including athletics.</p>
-                        <p>The first organized international competitions for athletes with a physical disability (not deaf) began in 1952, when the first international Stoke Mandeville Games were organized for World War II veterans. This only included athletes in a wheelchair. This inspired the first Paralympic Games, held in 1960. Competitions would over time be expanded to include mainly athletes with amputation, cerebral palsy and visual impairment, in addition to wheelchair events.</p>
-                    </div>
-                    <div class="list">
-                        <ul>
-                            <li>Sprint Races (100m, 200m, 400m)</li>
-                            <li>Middle Distance Races (800m, 1500m)</li>
-                            <li>Long Distance Races (5000m, 10000m)</li>
-                            <li>Hurdles (110m hurdles, 400m hurdles)</li>
-                            <li>Relay Races (4x100m, 4x400m)</li>
-                        </ul>
-                        <ul>
-                            <li>Jumping Events (Long Jump, High Jump, Triple Jump, Pole Vault)</li>
-                            <li>Throwing Events (Shot Put, Discus Throw, Javelin Throw, Hammer Throw)</li>
-                            <li>Decathlon and Heptathlon</li>
-                            <li>Marathon</li>
-                            <li>Race Walking</li>
-                        </ul>
-                    </div>
-                
-                  </details>
 
 
-                
-            </section>
-        </div>
-        
+            <details>
+
+                <summary>
+                    More Details....
+                </summary>
+                <section id="modern-era"></section>
+                <h2
+                    style="text-align: center;margin-bottom: 1rem;font-family: 'Cinzel Decorative';font-size: 40px;text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">
+                    Modern era</h2>
+                <div class="modern-era"
+                    style="text-align: justify; padding: 20px; font-family: 'Bodoni Moda';font-size: 22px;">
+
+                    <p>The Cotswold Olympic Games, a sports festival which emerged in 17th century England, featured
+                        athletics in the form of sledgehammer throwing contests. Annually, from 1796 to 1798,
+                        L'Olympiade de la République was held in revolutionary France, and is an early forerunner to the
+                        modern Olympic Games. The premier event of this competition was a running event, but various
+                        ancient Greek disciplines were also on display. The 1796 Olympiade marked the introduction of
+                        the metric system into the sport.</p>
+                    <p>Athletics competitions were held about 1812 at the Royal Military College, Sandhurst, and in 1840
+                        in Shrewsbury, Shropshire at the Royal Shrewsbury School Hunt. The Royal Military Academy at
+                        Woolwich held an organised competition in 1849, and a regular series of closed meetings open
+                        only to undergraduates, was held by Exeter College, Oxford, from 1850. The annual Wenlock
+                        Olympian Games, first held in 1850 in Wenlock, England, incorporated athletics events into its
+                        sports programme.</p>
+                    <p>The first modern-style indoor athletics meetings were recorded shortly after in the 1860s,
+                        including a meet at Ashburnham Hall in London which featured four running events and a triple
+                        jump competition.</p>
+                    <p>The Amateur Athletic Association (AAA) was established in England in 1880 as the first national
+                        body for the sport of athletics and began holding its own annual athletics competition – the AAA
+                        Championships. The United States also began holding an annual national competition – the USA
+                        Outdoor Track and Field Championships – first held in 1876 by the New York Athletic Club.
+                        Athletics became codified and standardized via the English AAA and other general sports
+                        organisations in the late 19th century, such as the Amateur Athletic Union (founded in the US in
+                        1888) and the Union des sociétés françaises de sports athlétiques (founded in France in 1889).
+                    </p>
+                    <p>An athletics competition was included in the first modern Olympic Games in 1896 and it has been
+                        one of the foremost competitions at the quadrennial multi-sport event ever since. Originally for
+                        men only, the 1928 Olympics saw the introduction of women's events in the athletics programme.
+                        Athletics is part of the Paralympic Games since the inaugural Games in 1960. Athletics has a
+                        very high profile during major championships, especially the Olympics, but otherwise is less
+                        popular.</p>
+                    <p>An international governing body, the International Amateur Athletics Federation (IAAF), was
+                        founded in 1912. It enforced amateur sport status on competitions during much of the 20th
+                        century. Professional competition continued at a low level, becoming increasingly more common as
+                        the century progressed. The International Track Association briefly formed a professional track
+                        and field circuit in the United States in the 1970s. Athletes used their increasing status to
+                        push for remuneration and the IAAF responded with the IAAF Golden Events series and the
+                        establishment an outdoor World Championships in 1983, including track and field, racewalking and
+                        a marathon event. In modern times, athletes can receive money for racing, putting an end to the
+                        so-called "amateurism" that existed before. The global body updated its name to the
+                        International Association of Athletics Federations in 2001, moving away from its amateur
+                        origins, before taking on its current name World Athletics in 2019.</p>
+                    <p>The Comité International Sports des Sourds had been formed by 1922, to govern international deaf
+                        sports, including athletics.</p>
+                    <p>The first organized international competitions for athletes with a physical disability (not deaf)
+                        began in 1952, when the first international Stoke Mandeville Games were organized for World War
+                        II veterans. This only included athletes in a wheelchair. This inspired the first Paralympic
+                        Games, held in 1960. Competitions would over time be expanded to include mainly athletes with
+                        amputation, cerebral palsy and visual impairment, in addition to wheelchair events.</p>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Sprint Races (100m, 200m, 400m)</li>
+                        <li>Middle Distance Races (800m, 1500m)</li>
+                        <li>Long Distance Races (5000m, 10000m)</li>
+                        <li>Hurdles (110m hurdles, 400m hurdles)</li>
+                        <li>Relay Races (4x100m, 4x400m)</li>
+                    </ul>
+                    <ul>
+                        <li>Jumping Events (Long Jump, High Jump, Triple Jump, Pole Vault)</li>
+                        <li>Throwing Events (Shot Put, Discus Throw, Javelin Throw, Hammer Throw)</li>
+                        <li>Decathlon and Heptathlon</li>
+                        <li>Marathon</li>
+                        <li>Race Walking</li>
+                    </ul>
+                </div>
+
+            </details>
+
+
+
+    </section>
+    </div>
+
     </section>
 
     <!-- News Section -->
-    <section class="news">
-        <h2 style="font-family: 'Cinzel Decorative';font-size: 40px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Latest News</h2>
+    <section class="news" id="news">
+        <h2 style="font-family: 'Cinzel Decorative';font-size: 40px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Latest
+            News</h2>
         <div class="news-articles">
             <div class="news-article">
                 <img src="images/run.jpeg" alt="News 1">
-                <h3>2024 PARIS OLYMPIC GAMES: SHELLY-ANN FRASER-PRYCE WITHDRAWS FROM 100M RACE IN SWITZERLAND AFTER DISCOMFORT</h3>
-                <p>Three-time Olympic gold medallist Shelly-Ann Fraser-Pryce pulled out of her 100m heat at the World Athletics Continental Tour meet in Switzerland after saying she "felt something" during warm-ups. She was scheduled to compete in her first international race of the season in Luzern as she prepares for next month's Paris Games. She said earlier this year that Paris will be her final Olympics.
+                <h3>2024 PARIS OLYMPIC GAMES: SHELLY-ANN FRASER-PRYCE WITHDRAWS FROM 100M RACE IN SWITZERLAND AFTER
+                    DISCOMFORT</h3>
+                <p>Three-time Olympic gold medallist Shelly-Ann Fraser-Pryce pulled out of her 100m heat at the World
+                    Athletics Continental Tour meet in Switzerland after saying she "felt something" during warm-ups.
+                    She was scheduled to compete in her first international race of the season in Luzern as she prepares
+                    for next month's Paris Games. She said earlier this year that Paris will be her final Olympics.
                 </p>
             </div>
             <div class="news-article">
-                <img src="https://dims.apnews.com/dims4/default/e41f219/2147483647/strip/true/crop/2862x1908+0+0/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Ff8%2Fc6%2F3bbeb36042f3339d8302d3f4a9aa%2F597a18e165464eb49d443bff526f157f" alt="News 2">
+                <img src="https://dims.apnews.com/dims4/default/e41f219/2147483647/strip/true/crop/2862x1908+0+0/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Ff8%2Fc6%2F3bbeb36042f3339d8302d3f4a9aa%2F597a18e165464eb49d443bff526f157f"
+                    alt="News 2">
                 <h3>SIMONE BILES QUALIFIES FOR 2024 PARIS OLYMPIC GAMES WITH IMPRESSIVE SHOWING AT US TRIALS EVENT</h3>
-                <p>Simone Biles will compete at her third Olympic Games, when she takes part in the 2024 Olympics in Paris this summer. The 27-year-old American qualified for the US team on Sunday at the trials for the upcoming event. Biles took a two-year break from the sport before excelling once more upon her return, winning two national championships and one world title.</p>
+                <p>Simone Biles will compete at her third Olympic Games, when she takes part in the 2024 Olympics in
+                    Paris this summer. The 27-year-old American qualified for the US team on Sunday at the trials for
+                    the upcoming event. Biles took a two-year break from the sport before excelling once more upon her
+                    return, winning two national championships and one world title.</p>
             </div>
             <div class="news-article">
-                <img src="https://s.rfi.fr/media/display/3c0aa334-d1ea-11ec-aa9d-005056bf30b7/w:980/p:16x9/e7b0326bb5bfc99f128ec635f9362edeceef00bb.jpg" alt="News 3">
-                <h3>GIANMARCO TAMBERI SAYS JOINT OLYMPIC GOLD ‘TRULY UNIQUE’ – BUT MUTAZ BARSHIM WARNS IT ‘WILL NEVER HAPPEN AGAIN</h3>
-                <p>The men's high jump promises to be appointment viewing at the Paris Olympic Games if Tokyo 2020 is anything to go on. Three years ago, Gianmarco Tamberi and Mutaz Barshim shared gold in a historic moment that the Italian described as "truly unique". Three-time world champion Barshim has warned "it will never happen again" after their famous moment of sporting collaboration.</p>
+                <img src="https://s.rfi.fr/media/display/3c0aa334-d1ea-11ec-aa9d-005056bf30b7/w:980/p:16x9/e7b0326bb5bfc99f128ec635f9362edeceef00bb.jpg"
+                    alt="News 3">
+                <h3>GIANMARCO TAMBERI SAYS JOINT OLYMPIC GOLD ‘TRULY UNIQUE’ – BUT MUTAZ BARSHIM WARNS IT ‘WILL NEVER
+                    HAPPEN AGAIN</h3>
+                <p>The men's high jump promises to be appointment viewing at the Paris Olympic Games if Tokyo 2020 is
+                    anything to go on. Three years ago, Gianmarco Tamberi and Mutaz Barshim shared gold in a historic
+                    moment that the Italian described as "truly unique". Three-time world champion Barshim has warned
+                    "it will never happen again" after their famous moment of sporting collaboration.</p>
             </div>
         </div>
-            <div class="news-articles">
+        <div class="news-articles">
             <div class="news-article">
-                <img src="https://static.ffx.io/images/$zoom_1%2C$multiply_1%2C$ratio_1.777778%2C$width_1396%2C$x_0%2C$y_0/t_crop_custom/c_scale%2Cw_620%2Cq_88%2Cf_auto/1c2faa77537946c734bc57f0190cd565e3fc9a7c" alt="News 4">
-                <h3>DIAMOND LEAGUE: JAKOB INGEBRIGTSEN ‘EXCITED FOR PARIS’ AFTER NEW 1500M RECORD, JESSICA HULL SETS WORLD-BEST 2000M TIME</h3>
-                <p>Ahead of his 1500m title defence at the Olympic Games, Jakob Ingebrigtsen beat his own European record at the Diamond League in Monaco on Friday. The Norwegian breezed to victory in a time of 3:26.73 and then said he was "excited" about defending his title in Paris next month. Elsewhere, Jessica Hull broke the 2000m world record and Ben Pattison set the second-fastest 800m time in British history.
+                <img src="https://static.ffx.io/images/$zoom_1%2C$multiply_1%2C$ratio_1.777778%2C$width_1396%2C$x_0%2C$y_0/t_crop_custom/c_scale%2Cw_620%2Cq_88%2Cf_auto/1c2faa77537946c734bc57f0190cd565e3fc9a7c"
+                    alt="News 4">
+                <h3>DIAMOND LEAGUE: JAKOB INGEBRIGTSEN ‘EXCITED FOR PARIS’ AFTER NEW 1500M RECORD, JESSICA HULL SETS
+                    WORLD-BEST 2000M TIME</h3>
+                <p>Ahead of his 1500m title defence at the Olympic Games, Jakob Ingebrigtsen beat his own European
+                    record at the Diamond League in Monaco on Friday. The Norwegian breezed to victory in a time of
+                    3:26.73 and then said he was "excited" about defending his title in Paris next month. Elsewhere,
+                    Jessica Hull broke the 2000m world record and Ben Pattison set the second-fastest 800m time in
+                    British history.
                 </p>
             </div>
             <div class="news-article">
-                <img src="https://ichef.bbci.co.uk/news/2048/cpsprodpb/36c3/live/ac9c79e0-36f8-11ef-a982-d530d9dbd594.jpg" alt="News 5">
-                <h3>PARIS OLYMPICS: DINA ASHER-SMITH, KEELY HODGKINSON AND JOSH KERR LEAD STAR-STUDDED TEAM GB ATHLETICS SQUAD</h3>
-                <p>Team GB's athletics squad for Paris 2024 is packed with medal potential as the likes of Dina Asher-Smith, Keely Hodgkinson and Katarina Johnson-Thompson chase a first Olympic title. Asher-Smith will compete in all three sprint events as she looks to claim a first individual medal at the Games, while Hodgkinson looks primed to climb onto the top step of the podium after three superb years.</p>
+                <img src="https://ichef.bbci.co.uk/news/2048/cpsprodpb/36c3/live/ac9c79e0-36f8-11ef-a982-d530d9dbd594.jpg"
+                    alt="News 5">
+                <h3>PARIS OLYMPICS: DINA ASHER-SMITH, KEELY HODGKINSON AND JOSH KERR LEAD STAR-STUDDED TEAM GB ATHLETICS
+                    SQUAD</h3>
+                <p>Team GB's athletics squad for Paris 2024 is packed with medal potential as the likes of Dina
+                    Asher-Smith, Keely Hodgkinson and Katarina Johnson-Thompson chase a first Olympic title. Asher-Smith
+                    will compete in all three sprint events as she looks to claim a first individual medal at the Games,
+                    while Hodgkinson looks primed to climb onto the top step of the podium after three superb years.</p>
             </div>
             <div class="news-article">
-                <img src="https://i0.wp.com/imgresizer.eurosport.com/unsafe/2560x1440/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/06/27/image-1ae0832f-ad0f-4fdc-81b0-b7efa0ebe954-85-2560-1440.jpeg?w=1200&resize=1200,0&ssl=1" alt="News 3">
-                <h3>PARIS 2024: ‘HURT AND DEVASTATED’ - ACHILLES INJURY RULES OLYMPIC SPRINT CHAMPION ELAINE THOMPSON-HERAH OUT OF GAMES</h3>
-                <p>Jamaica’s Elaine Thompson-Herah has vowed to return after an Achilles injury ruled her out of competing at the Paris Olympics. The 31-year-old - who celebrates her 32nd birthday on Friday - had already opted out of competing in the 200m at the Jamaican trials, ending her chances of achieving a historic ‘triple double’ of three consecutive Olympic victories in the 100m and 200m.</p>
+                <img src="https://i0.wp.com/imgresizer.eurosport.com/unsafe/2560x1440/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/06/27/image-1ae0832f-ad0f-4fdc-81b0-b7efa0ebe954-85-2560-1440.jpeg?w=1200&resize=1200,0&ssl=1"
+                    alt="News 3">
+                <h3>PARIS 2024: ‘HURT AND DEVASTATED’ - ACHILLES INJURY RULES OLYMPIC SPRINT CHAMPION ELAINE
+                    THOMPSON-HERAH OUT OF GAMES</h3>
+                <p>Jamaica’s Elaine Thompson-Herah has vowed to return after an Achilles injury ruled her out of
+                    competing at the Paris Olympics. The 31-year-old - who celebrates her 32nd birthday on Friday - had
+                    already opted out of competing in the 200m at the Jamaican trials, ending her chances of achieving a
+                    historic ‘triple double’ of three consecutive Olympic victories in the 100m and 200m.</p>
             </div>
         </div>
     </section>
 
     <!-- Olimpic Section part -->
 
-    <section class="olympics">
+    <section class="olympics" id="olympics">
         <h2>The Olympics</h2>
         <div class="">
             <div class="olympics-content ">
                 <div class="first">
                     <div class="olymic-image1">
-                        <img src="images/olympic.jpeg" alt="Olympic Games" class="olympics-image" >
+                        <img src="images/olympic.jpeg" alt="Olympic Games" class="olympics-image">
                     </div>
                     <div class="olymic-content1">
 
                         <p>The Olympics is a leading international sporting event featuring summer and winter sports
-                            competitions in which thousands of athletes from around the world participate in a variety of competitions.
-                            The Olympic Games are considered the world's foremost sports competition with more than 200 nations
+                            competitions in which thousands of athletes from around the world participate in a variety
+                            of competitions.
+                            The Olympic Games are considered the world's foremost sports competition with more than 200
+                            nations
                             participating.The modern Olympic Games were first held in 1896 in Athens, Greece, and have
-                            since grown to include more than 300 events in various sports disciplines. The Olympics are held every four years, with
-                            the Summer and Winter Games alternating every two years. The Games are a symbol of global unity and
-                            sportsmanship, bringing together athletes from diverse backgrounds to compete on the world stage. One of
+                            since grown to include more than 300 events in various sports disciplines. The Olympics are
+                            held every four years, with
+                            the Summer and Winter Games alternating every two years. The Games are a symbol of global
+                            unity and
+                            sportsmanship, bringing together athletes from diverse backgrounds to compete on the world
+                            stage. One of
                             the most iconic aspects of the Olympics is the opening ceremony, which features a parade
-                            of nations, the lighting of the Olympic flame, and a cultural showcase of the host country. The
-                            Olympic motto, "Citius, Altius, Fortius" (Faster, Higher, Stronger), embodies the spirit of the
+                            of nations, the lighting of the Olympic flame, and a cultural showcase of the host country.
+                            The
+                            Olympic motto, "Citius, Altius, Fortius" (Faster, Higher, Stronger), embodies the spirit of
+                            the
                             Games and the pursuit of excellence by athletes.</p>
                     </div>
                 </div>
@@ -645,15 +933,18 @@
 
                     <div class="olymic-content2">
                         <p>The Olympics also have a significant impact on the host cities, often leading to the
-                            development of new infrastructure and the promotion of tourism. Hosting the Olympics is a prestigious honor and
-                            provides an opportunity for the host nation to showcase its culture and achievements to the world.Over
+                            development of new infrastructure and the promotion of tourism. Hosting the Olympics is a
+                            prestigious honor and
+                            provides an opportunity for the host nation to showcase its culture and achievements to the
+                            world.Over
                             the years, the Olympics have produced many memorable moments and legendary athletes, such as
-                            Usain Bolt, Michael Phelps, and Simone Biles. These athletes have inspired millions with their
-                            performances and have left a lasting legacy in the world of sports. <a href="https://en.wikipedia.org/wiki/Olympic_Games">more..</a></p>
+                            Usain Bolt, Michael Phelps, and Simone Biles. These athletes have inspired millions with
+                            their
+                            performances and have left a lasting legacy in the world of sports. <a
+                                href="https://en.wikipedia.org/wiki/Olympic_Games">more..</a></p>
                     </div>
                     <div class="olymic-image2">
-                        <img src="images/olympicparice.webp" alt="Olympic Flame" class="olympics-image"
-                            >
+                        <img src="images/olympicparice.webp" alt="Olympic Flame" class="olympics-image">
                     </div>
                 </div>
             </div>
@@ -662,7 +953,7 @@
     </section>
 
     <!-- Featured Athletes Section -->
-    <section class="athletes">
+    <section class="athletes" id="athletes">
         <h2>Featured Athletes</h2>
         <div class="athlete-cards">
             <div class="athlete-card">
@@ -670,28 +961,28 @@
                 <h3>Usain Bolt</h3>
                 <p>Known as the fastest man alive, Usain Bolt has won numerous gold medals and set multiple world
                     records.</p>
-                    <p><a href="athleticdata.html#usain-bolt">more..</a></p>
+                <p><a href="athleticdata.html#usain-bolt">more..</a></p>
             </div>
             <div class="athlete-card">
                 <img src="images/felix.webp" alt="Athlete 2">
                 <h3>Allyson Felix</h3>
                 <p>With an impressive career in track and field, Allyson Felix is a multiple-time Olympic and World
                     Champion.</p>
-                    <p><a href="athleticdata.html">more..</a></p>
+                <p><a href="athleticdata.html">more..</a></p>
             </div>
             <div class="athlete-card">
                 <img src="images/farah.jpeg" alt="Athlete 3">
                 <h3>Mo Farah</h3>
                 <p>Mo Farah is a long-distance runner who has won gold medals in both the 5,000 and 10,000 meters at the
                     Olympics.</p>
-                    <p><a href="athleticdata.html">more..</a></p>
+                <p><a href="athleticdata.html">more..</a></p>
             </div>
             <div class="athlete-card">
                 <img src="images/shelly.webp" alt="Athlete 4">
                 <h3>Shelly-Ann Fraser-Pryce</h3>
                 <p>Shelly-Ann Fraser-Pryce is a Jamaican track and field sprinter who has won multiple Olympic gold
                     medals.</p>
-                    <p><a href="athleticdata.html">more..</a></p>
+                <p><a href="athleticdata.html">more..</a></p>
             </div>
             <div class="athlete-card">
                 <img src="images/chopra.webp" alt="Athlete 5">
@@ -705,14 +996,53 @@
                 <h3>Jessica Ennis-Hill</h3>
                 <p>Jessica Ennis-Hill is a retired British track and field athlete who was the 2012 Olympic heptathlon
                     champion.</p>
-                    <p><a href="athleticdata.html">more..</a></p>
+                <p><a href="athleticdata.html">more..</a></p>
             </div>
+        </div>
+    </section>
+
+    <section class="olympics-section" id="olympics-section">
+        <div class="container">
+            <h1>2024 Olympics</h1>
+            <div class="images">
+                <img src="https://images.squarespace-cdn.com/content/v1/5f343ff9541cd11433040eca/1698663595358-ZP24UW8AHAWBNLYS6BE5/PARIS.jpg"
+                    alt="2024 Olympics" class="main-image">
+
+            </div>
+            <div class="olympic-content2024">
+                <p><b>The 2024 Olympics will be held in Paris, France. The event will feature numerous sports and will
+                        be attended by athletes from around the world.</b></p>
+                <p>Here are some key details about the event:</p>
+                <ul class="olympic-list">
+                    <li>Date: July 26 - August 11, 2024</li>
+                    <li>Location: Paris, France</li>
+                    <li>Number of Sports: 32</li>
+                    <li>Participating Countries: Over 200</li>
+                </ul>
+                <!-- <div class="images">
+                
+                <img src="https://ca-times.brightspotcdn.com/dims4/default/491e097/2147483647/strip/false/crop/5461x3641+0+0/resize/1486x991!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb1%2F38%2F7451aceb45d89773a612a18e960f%2Fhttps-delivery.gettyimages.com%2Fdownloads%2F1177449924.jpg" alt="2024 Olympics Map" class="map-image">
+            </div> -->
+                <p>Paris will host various events across the city, utilizing iconic landmarks and state-of-the-art
+                    facilities.</p>
+            </div>
+            <div class="venue-maps">
+                <h2>Venue Maps</h2>
+                <div class="venue-images">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18325.479897521047!2d2.3551971807289145!3d48.91921189722567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ebadd2263bf%3A0x70c04f7109156311!2sStade%20de%20France!5e0!3m2!1sen!2sjp!4v1721739313706!5m2!1sen!2sjp"
+                        width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
 
     <!-- Upcoming Events Section -->
-    <section class="events">
+    <section class="events" id="events">
         <h2>Upcoming Events</h2>
         <ul class="event-list">
             <li>
@@ -733,24 +1063,19 @@
         </ul>
     </section>
 
+    <a href="contact.html">more details
+    </a>
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Sports Hub. All rights reserved.</p>
+        <p>&copy; 2024 Sports Hub. All Rights Reserved Gropr1 KCGI.</p>
     </footer>
 
-    <script>
-        // Toggle mobile menu
-        const navLinks = document.querySelector('.nav-links');
-        const logo = document.querySelector('.logo');
 
-        logo.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
 
-<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-    &uarr;
-</button>
+    <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        &uarr;
+    </button>
+
 </body>
 
 </html>

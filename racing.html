@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>F1 Hub</title>
     <link rel="stylesheet" href="navbar.css">
     <style>
@@ -35,6 +36,10 @@
 
         header h1 {
             margin: 0;
+        }
+
+        .topic:hover {
+            color: red;
         }
 
 
@@ -72,9 +77,7 @@
             margin: 10px;
         }
 
-        /*.card img { 
-		height: 50px;
-	}*/
+
 
 
         .card:hover {
@@ -97,18 +100,40 @@
             display: flex;
         }
 
+        .events {
+            font-weight: bold;
+            animation: text-color-animation 5s infinite alternate;
 
-
+        }
 
         footer {
-            text-align: center;
-            padding: 10px;
             background-color: #333;
             color: #fff;
+            text-align: center;
+            padding: 1rem;
             position: fixed;
-            bottom: 0;
             width: 100%;
+            bottom: 0;
         }
+
+        @keyframes text-color-animation {
+            0% {
+                color: blue;
+            }
+
+            50% {
+                color: red;
+            }
+
+            100% {
+                color: green;
+            }
+        }
+
+
+
+
+        
     </style>
 </head>
 
@@ -364,6 +389,9 @@
         </div>
 
     </section>
+    <footer>
+        <p>&copy; 2024 Sports Hub. All Rights Reserved Gropr1 KCGI.</p>
+    </footer>
 
 
 </body>

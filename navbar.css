@@ -1,31 +1,78 @@
 /* Navigation Bar */
-        .navbarh {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            background: linear-gradient(to bottom, #797979 0%, #444 100%);
-        }
+.navbarh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(to bottom, #797979 0%, #444 100%);
+    font-family: 'Bodoni Moda';
+    font-size: 22px;
+    /* position: relative; */
+}
 
-        .navbarh .logo {
-            color: #fff;
-            font-size: 1.5rem;
-        }
+.navbarh .logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
 
-        .navbarh .nav-links {
-            list-style: none;
-            display: flex;
-        }
+.navbarh .nav-links {
+    list-style: none;
+    display: flex;
+}
 
-        .navbarh .nav-links li {
-            margin: 0 1rem;
-        }
+.navbarh .nav-links li {
+    margin: 0 1rem;
+}
 
-        .navbarh .nav-links a {
-            color: #fff;
-            text-decoration: none;
-        }
+.navbarh .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
 
-        .navbarh .nav-links a:hover {
-            text-decoration: underline;
-        }
+.navbarh .nav-links a:hover {
+    color: rgb(255, 0, 0);
+    font-size: x-large;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbarh {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbarh .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide nav links by default */
+    }
+
+    .navbarh .nav-links.show {
+        display: flex; /* Show nav links when toggle button is clicked */
+    }
+
+    .navbarh .nav-links li {
+        margin: 0.5rem 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbarh .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbarh .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 0 1rem; /* Add margin for spacing */
+    }
+}
+
+/* Hide menu toggle by default */
+.navbarh .menu-toggle {
+    /* display: none; */
+}
