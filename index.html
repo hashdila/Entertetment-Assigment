@@ -74,6 +74,12 @@
             animation: fade 3s ease-in-out infinite;
         }
 
+        .card :hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+        }
+
 
         @keyframes fontstyle {
             from {color: red;}
@@ -178,7 +184,6 @@
         <nav class="navbarh">
             <div class="logo">Sports Hub</div>
             <div class="menu-toggle">
-                <input type="checkbox" id="menu-toggle-checkbox">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -214,12 +219,14 @@
 
     <!-- Image Cards Section -->
     <section class="cards">
+        
         <a href="cricket.html">
             <div class="card">
                 <img src="images/cricket.jpeg" alt="Cricket">
                 <h2>Cricket</h2>
                 <p>Latest cricket news and updates.</p>
             </div>
+        
         </a>
         <a href="football.html">
             <div class="card">
